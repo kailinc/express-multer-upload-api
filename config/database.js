@@ -1,6 +1,6 @@
 'use strict'
 
-const mongooseBaseName = 'express-api-template'
+const mongooseBaseName = 'express-multer-upload-api'
 
 const environment = process.env.NODE_ENV || 'development'
 const database = {
