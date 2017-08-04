@@ -1,6 +1,6 @@
 'use strict'
 
-const AWSUpload = require('../lib/s3-upload')
+const AWSUpload = require('../lib/s3-uploads')
 
 const file = process.argv[2]
 const name = process.argv[3]
