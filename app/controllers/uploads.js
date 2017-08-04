@@ -24,16 +24,18 @@ const show = (req, res) => {
 }
 
 const create = (req, res, next) => {
-  const upload = Object.assign(req.body.upload)
-  // name and url needed
-
-  Upload.create(upload)
-    .then(upload =>
-      res.status(201)
-        .json({
-          upload: upload.toJSON()
-        }))
-    .catch(next)
+  console.log(req.body)
+  next()
+  // const upload = Object.assign(req.body.upload)
+  // // name and url needed
+  //
+  // Upload.create(upload)
+  //   .then(upload =>
+  //     res.status(201)
+  //       .json({
+  //         upload: upload.toJSON()
+  //       }))
+  //   .catch(next)
 }
 
 const update = (req, res, next) => {
